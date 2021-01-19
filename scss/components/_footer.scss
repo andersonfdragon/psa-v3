@@ -1,0 +1,90 @@
+/*FOOTER WEB*/
+footer{
+  background: url('../images/background_footer_web.webp');
+  background-position: center bottom;
+  background-size: 1920px 420px;
+  background-repeat: no-repeat;
+  height: 420px;
+  padding: 170px 0px 0px 0px;
+  @media screen and (max-width: $window-size-md) {
+    padding: 170px 0px 60px 0px;
+    background-size: 1920px 540px;
+    height: 500px;
+  }
+}
+.logo_footer_web{
+  margin: 60px 0px 0px 0px;
+}
+
+.tx-footer-web-01{
+  color: $color10;
+  font-family: $Roboto-Bold;
+  font-size: $tx-size-xl-06;
+  margin:30px 0px 20px 0px;
+}
+.tx-footer-web-02{
+  color: $blanco;
+  font-family: $Lato-Regular;
+  font-size: $tx-size-xl-06 - 2;
+  margin:0px 0px 15px 0px;
+  span img{
+    width: 15px;
+    margin-right: 10px;
+    @media screen and (max-width: $window-size-xl) {
+      margin-right: 5px;
+    }
+  }
+}
+
+.margen-iconos-redes{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin:65px 0px 0px 0px;
+  @media screen and (max-width: $window-size-xl) {
+    margin:70px 0px 0px 0px;
+  }
+  @media screen and (max-width: $window-size-lg) {
+    margin:60px 0px 0px 0px;
+  }
+  @media screen and (max-width: $window-size-md) {
+    margin:70px 0px 0px 0px;
+  }
+}
+.icono-red-footer{
+  margin:0px 0px 15px 0px;
+}
+
+
+/* SECCION TERMINOS */
+.seccion_terminos{
+  background-color: #1E1E1E;
+  padding: 0px 0px 10rem 0px;
+  @media screen and (max-width: 1920px) {
+    padding: 0px 0px 5rem 0px;
+  }
+  @media screen and (max-width: $window-size-xl) {
+    padding: 0px 0px 5rem 0px;
+  }
+  @media screen and (max-width: $window-size-md) {
+    padding: 0px 0px 4rem 0px;
+  }
+}
+
+.separador-footer{
+  border-top: 1px solid rgba(255,255,255,.2);
+}
+
+.tx-separador-footer{
+  color: rgba(255,255,255,.7);
+  font-family: $Lato-Regular;
+  font-size: $tx-size-xs-04;
+}
+.tx-separador-footer a{
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: rgba(255,255,255,.7);
+  font-family: $Lato-Regular;
+  font-size: $tx-size-xs-04;
+}

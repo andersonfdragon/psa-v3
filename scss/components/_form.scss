@@ -1,0 +1,842 @@
+/*FORM EXTERNO XS*/
+.nav-form-xs{
+	background: url('../images/bg-head-form-xs.webp');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 100% 235px;
+	height: 235px;
+	@media screen and (max-width: $window-size-xs-02) {
+		background-size: 100% 200px;
+		height: 200px;
+	}
+	@media screen and (max-width: $window-size-xs-02) {
+		background-size: 100% 180px;
+		height: 180px;
+  }
+}
+
+.regresar-index-form-xs{
+	display: block;
+	font-family: $Lato-Light;
+  font-size: $tx-size-xs-03;
+	color: $blanco !important;
+	margin:10px 0px 10px 20px;
+	span{
+		margin-right: 7px;
+		img{
+			width: 6px;
+		}
+	}
+	&:hover{
+		text-decoration: none;
+		color: $blanco;
+	}
+}
+
+.nav-form-xs-02{
+	background: url('../images/bg-head-form-xs-02.webp');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 100% 390px;
+	height: 390px;
+	@media screen and (max-width: $window-size-xs-02) {
+		background-size: 100% 350px;
+		height: 350px;
+	}
+	@media screen and (max-width: $window-size-xs-02) {
+		background-size: 100% 320px;
+		height: 320px;
+  }
+}
+
+.tx-nav-form-xs-02{
+	font-family: $Lato-Regular;
+  font-size: $tx-size-xs-01 - 4;
+	color: $blanco;
+	text-align: center;
+	margin:30px 0px 0px 0px;
+}
+
+/* ESTILOS FORMULARIO */
+@keyframes transicion-envio{
+  0%{
+    transform: scale(initial);
+  }
+  20%{
+    transform: scale(.9);
+  }
+  35%{
+    transform: scale(1.1);
+  }
+  60%{
+    transform: scale(0.25);
+    opacity:1;
+  }
+  90%{
+    transform: scale(0.25);
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.animacion-form{
+  animation-name: transicion-envio;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  opacity: 1;
+}
+
+@keyframes opacidad-contenido{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.suavizar-opacidad{
+  animation-name: opacidad-contenido;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.spinner-border.loader-form{
+  color: #2A2A80;
+  width: 60px;
+  height: 60px;
+  margin-top: 180px;
+}
+@media screen and (max-width: 575px) {
+  .spinner-border.loader-form{
+    margin-top: 90px;
+  }
+}
+
+.tx-seccion-form-send {
+  color: #2A2A80;
+  font-family: "Lato-Medium";
+  font-size: 40px;
+  text-align: center;
+  margin: 40px 0px 40px 0px;
+}
+@media screen and (max-width: 1650px) {
+  .tx-seccion-form-send {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .tx-seccion-form-send {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .tx-seccion-form-send {
+    margin: 30px 0px 30px 0px;
+  }
+}
+
+.seccion-01-formulario-registro{
+  padding: 60px 0px 60px 0px;
+	// background-color: black;
+	@media screen and (max-width: $window-size-xl) {
+    padding: 40px 0px 40px 0px;
+	}
+	@media screen and (max-width: $window-size-xs) {
+    padding: 0px 0px 60px 0px;
+  }
+}
+
+.tx-seccion-01-formulario-registro-01{
+  color: $color01;
+  font-family: $Lato-Regular;
+  font-size: $tx-size-xl-03 + 4;
+  text-align: center;
+	margin:40px 0px 40px 0px;
+	@media screen and (max-width: $window-size-xl) {
+    font-size: $tx-size-lg-03 + 4;
+	}
+	@media screen and (max-width: $window-size-lg) {
+    font-size: $tx-size-md-03 + 4;
+	}
+	@media screen and (max-width: $window-size-xs) {
+		margin:30px 0px 30px 0px;
+  }
+}
+
+
+/*FORMULARIO EXTERNO*/
+#contactForm{
+	padding: 0px 170px 0px 170px;
+	@media screen and (max-width: $window-size-xl) {
+		padding: 0px 150px 0px 150px;
+	}
+	@media screen and (max-width: $window-size-lg) {
+		padding: 0px 120px 0px 120px;
+	}
+	@media screen and (max-width: $window-size-md) {
+		padding: 0px 10px 0px 10px;
+	}
+	@media screen and (max-width: $window-size-xs) {
+		padding: 0px 15px 0px 15px;
+	}
+}
+#contactForm_02{
+	padding: 0px 170px 0px 170px;
+	@media screen and (max-width: $window-size-xl) {
+		padding: 0px 150px 0px 150px;
+	}
+	@media screen and (max-width: $window-size-md) {
+		padding: 0px 10px 0px 10px;
+	}
+	@media screen and (max-width: $window-size-xs) {
+		padding: 0px 15px 0px 15px;
+	}
+}
+.form-control{
+	color:$negro;
+	text-align: center;
+	font-family: $Lato-Italic;
+	font-size: $tx-size-xl-05;
+	width:100%;
+	height: 60px;
+	border: 1px solid #666666;
+	border-radius: 10px;
+	@media screen and (max-width: $window-size-xl) {
+		height: 50px;
+	}
+	@media screen and (max-width: $window-size-lg) {
+		height: 40px;
+	}
+	@media screen and (max-width: $window-size-xs) {
+		height: 60px;
+		border-radius: 5px;
+		font-size: $tx-size-xs-03;
+  }
+}
+
+label{
+	display: none;
+	@media screen and (max-width: $window-size-xs) {
+		display: block;
+		border-radius: 5px;
+		font-size: $tx-size-xs-03;
+  }
+}
+
+.form-control::-webkit-input-placeholder {
+	color: $negro;
+	@media screen and (max-width: $window-size-xs) {
+		opacity: 0;
+  }
+}
+
+.form-group{
+	margin-bottom:15px;
+}
+
+.contenedor-label-telefono{
+  position: relative;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.telephone-web{
+  position: absolute;
+  top:6px;
+  left: 50px;
+	width: 90px;
+	@media screen and (max-width: $window-size-xl) {
+		top:3px;
+		left: 15px;
+		width: 90px;
+	}
+	@media screen and (max-width: $window-size-lg) {
+		top:3px;
+		left: 15px;
+		width: 65px;
+	}
+	@media screen and (max-width: $window-size-sm) {
+		top:3px;
+		left: 35px;
+		width: 65px;
+	}
+	@media screen and (max-width: $window-size-xs) {
+		top:13px;
+		left: 20px;
+		width: 65px;
+	}
+	@media screen and (max-width: $window-size-xs-02) {
+		top:13px;
+		left: 10px;
+		width: 65px;
+	}
+	@media screen and (max-width: $window-size-xs-03) {
+		top:13px;
+		left: 0px;
+		width: 65px;
+	}
+}
+.estilo_casilla_telefono_02{
+  font-size: $tx-size-xl-05;
+	width: 70%;
+	@media screen and (max-width: $window-size-xl) {
+		width: 70%;
+	}
+}
+
+
+.checkbox-02{
+	color:#606060;
+	font-family: 'Lato-Regular', sans-serif;
+  font-size: $tx-size-xl-04 - 4;
+  line-height: $tx-size-xl-04 - 4;
+  margin:15px 0px 15px 0px;
+	width: 70%;
+	@media screen and (max-width: $window-size-xl) {
+    font-size: $tx-size-lg-06;
+	}
+	@media screen and (max-width: $window-size-md) {
+		width: 80%;
+	}
+	@media screen and (max-width: $window-size-sm) {
+		width: 75%;
+	}
+	@media screen and (max-width: $window-size-xs) {
+		width: 100%;
+	}
+}
+
+.tx_terminos{
+	color:#606060;
+	font-family: 'Lato-Bold', sans-serif;
+	font-size: $tx-size-xl-06;
+	@media screen and (max-width: $window-size-xl) {
+    font-size: $tx-size-lg-06;
+	}
+}
+
+.tx_terminos:focus{
+	color:#232852;
+	text-decoration: none;
+}
+
+.tx_terminos:hover{
+	color:#232852;
+	text-decoration: none;
+}
+
+button.btn.btn-warning.btn-lg{
+	display: block;
+	position: relative;
+  width: 90%;
+	background: $gradient04;
+	background-position: center;
+	box-shadow: 0px 3px 10px rgba(0,0,0,.5);
+	border-radius:35px;
+	border:none;
+	color:#fff;
+	font-family: $Roboto-Regular;
+	font-size: $tx-size-xl-04;
+	padding:15px 20px 15px 15px;
+	margin-top:30px;
+  opacity: 1;
+  span{
+		position: absolute;
+		right: 15px;
+		top: 12px;
+	}
+	// @media screen and (max-width: $window-size-xl) {
+  //   font-size: $tx-size-lg-06;
+	// }
+	@media screen and (max-width: $window-size-xs) {
+		border-radius:5px;
+		font-size: $tx-size-xs-02;
+		width: 100%;
+  }
+}
+
+button.btn.btn-warning.btn-lg:focus{
+	color:#fff;
+	background: $gradient04;
+}
+
+button.btn.btn-warning.btn-lg:hover{
+	color:#fff;
+	background: $gradient04;
+}
+
+
+.list-unstyled {
+  font-family: 'Lato-Regular', sans-serif;
+  font-size: $tx-size-xl-06;
+  text-align: center;
+	color:$color06;
+	@media screen and (max-width: $window-size-xl) {
+    font-size: $tx-size-lg-06;
+	}
+}
+
+#msgSubmit_colaboradores {
+  font-family: 'Lato-Regular', sans-serif;
+  font-size: $tx-size-xl-06;
+	color:$color06;
+	@media screen and (max-width: $window-size-xl) {
+    font-size: $tx-size-lg-06;
+	}
+}
+#msgSubmit_proceso_seleccion {
+  font-family: 'Lato-Regular', sans-serif;
+  font-size: $tx-size-xl-06;
+	color:$color06;
+	@media screen and (max-width: $window-size-xl) {
+    font-size: $tx-size-lg-06;
+	}
+}
+#msgSubmit_funciones {
+  font-family: 'Lato-Regular', sans-serif;
+  font-size: $tx-size-xl-06;
+	color:$color06;
+	@media screen and (max-width: $window-size-xl) {
+    font-size: $tx-size-lg-06;
+	}
+}
+#msgSubmit_condiciones {
+  font-family: 'Lato-Regular', sans-serif;
+  font-size: $tx-size-xl-06;
+  margin: 0px 0px 30px 0px;
+	color:$color06;
+	@media screen and (max-width: $window-size-xl) {
+    font-size: $tx-size-lg-06;
+	}
+}
+#msgSubmit {
+  font-family: 'Lato-Regular', sans-serif;
+  font-size: $tx-size-xl-06;
+  color:$color06;
+	margin:10px 0px 10px 0px;
+	@media screen and (max-width: $window-size-xl) {
+    font-size: $tx-size-lg-06;
+	}
+}
+#msgSubmit_paso_02 {
+  font-family: 'Lato-Regular', sans-serif;
+  font-size: $tx-size-xl-06;
+  color:$color06;
+	margin:10px 0px 10px 0px;
+	@media screen and (max-width: $window-size-xl) {
+    font-size: $tx-size-lg-06;
+	}
+}
+
+.tx-seccion-01-formulario-registro-02{
+  color: $color01;
+  font-family: $Lato-Light;
+  font-size: $tx-size-xl-03;
+	margin:20px 0px 20px 0px;
+	@media screen and (max-width: $window-size-xl) {
+    font-size: $tx-size-lg-03;
+	}
+	@media screen and (max-width: $window-size-xs) {
+    font-size: $tx-size-xs-03;
+	}
+}
+
+
+/*TERMINOS Y CONDICIONES*/
+.terminos_condiciones{
+	padding: 10px 0px 20px 0px;
+}
+.terminos_condiciones_2020{
+	padding: 60px 0px 120px 0px;
+}
+.tx_lato_regular_12_terminos{
+	color:#979797;
+	font-family:"Lato-Regular", sans-serif;
+	font-size:$tx-size-xl-06 - 2;
+	text-align: justify;
+	a{
+		color:$color01;
+		font-family:"Lato-Bold", sans-serif;
+		font-size:$tx-size-xl-06 - 2;
+	}
+	@media screen and (max-width: $window-size-xl) {
+    font-size: $tx-size-lg-06;
+	}
+}
+
+.tx_lato_bold_12_terminos{
+	color:$color01;
+	font-family:"Lato-Bold", sans-serif;
+	font-size:$tx-size-xl-06 - 2;
+	@media screen and (max-width: $window-size-xl) {
+    font-size: $tx-size-lg-06;
+	}
+}
+
+.iframe-modal-condiciones{
+	height: 520px;
+	border-top:1px solid #EAEAEA;
+	border-left:1px solid #EAEAEA;
+	border-bottom:1px solid #EAEAEA;
+	border-right: none;
+	margin:0px 0px 10px 0px;
+	overflow-x: hidden;
+	@media screen and (max-width: $window-size-xs) {
+		height: 70vh;
+	}
+}
+.close.terminos_condiciones{
+	color:#939393;
+	position: absolute;
+	right: 16.5px;
+	top:15px;
+	opacity: 1;
+	font-size: $tx-size-xl-04;
+	text-shadow: none;
+}
+.icono_aceptar{
+	font-size: $tx-size-xl-06 - 1;
+	@media screen and (max-width: $window-size-xl) {
+    font-size: $tx-size-lg-06;
+	}
+}
+.modal-content.condiciones-modal{
+  border: none;
+  text-align: center;
+  padding: 50px 15px 50px 15px;
+}
+button.btn.btn-warning.btn-lg.btn-modal-terminos{
+  width: 50%;
+	font-size: $tx-size-xl-04;
+	@media screen and (max-width: $window-size-xl) {
+    font-size: $tx-size-lg-04;
+	}
+}
+
+
+/*PAGINA AGRADECIMIENTO 2019-12*/
+.seccion_01_mensaje_enviado{
+  padding: 60px 0px 60px 0px;
+}
+.tx-agradecimiento-01{
+	color:$color01;
+	font-family: $Lato-Light;
+	font-size:$tx-size-xl-01;
+  margin-top: 40px;
+	text-align: center;
+	@media screen and (max-width: $window-size-xl) {
+    font-size: $tx-size-lg-01;
+	}
+}
+.tx-agradecimiento-02{
+	color:$negro;
+  font-family: $Lato-Regular;
+  text-align: center;
+	font-size:$tx-size-xl-03;
+	margin-top: 10px;
+	@media screen and (max-width: $window-size-xl) {
+    font-size: $tx-size-lg-03;
+	}
+	@media screen and (max-width: $window-size-xs) {
+		color:$color01;
+		font-size: $tx-size-xs-03;
+		text-align: left;
+		span{
+			font-family: $Lato-Bold;
+		}
+	}
+}
+
+.tx-agradecimiento-03{
+	color:#2A2A80;
+	font-family: $Lato-Regular;
+	font-size:$tx-size-xl-06 - 2;
+  margin-top: 70px;
+  span{
+		font-family: $Lato-Bold;
+		@media screen and (max-width: $window-size-xs) {
+			font-family: $Lato-Regular;
+		}
+	}
+	@media screen and (max-width: $window-size-xs) {
+		font-family: $Lato-Regular;
+		margin-top: 5px;
+		margin-bottom: 50px;
+	}
+}
+
+.btn-agradecimiento-aliados-2020{
+	cursor: pointer;
+}
+
+.fondo_contenido_01{
+	background: url('../images/img-agradecimiento-aliados-2020-01.webp');
+	background-size: 100% 220px;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 217px;
+	margin:10px 0px 0px 0px;
+	position: relative;
+}
+@media screen and (max-width: 1199px) {
+	.fondo_contenido_01{
+		background-size: 100% auto;
+		min-width: 100%;
+		margin:10px 0px 0px 0px;
+		height: 200px;
+	}
+}
+@media screen and (max-width: 991px) {
+	.fondo_contenido_01{
+		background-size: 100% auto;
+		min-width: 100%;
+		margin:10px 0px 0px 0px;
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.fondo_contenido_01{
+		background-size: 100% auto;
+		min-width: 100%;
+		height: 300px;
+		margin:0px 0px 0px 0px;
+	}
+}
+@media screen and (max-width: 575px) {
+	.fondo_contenido_01{
+		background-size: 100% auto;
+		min-width: 100%;
+		height: 150px;
+		margin:60px 0px 0px 0px;
+	}
+}
+.fondo_contenido_01:hover div.info_contenido{
+	background:url('../images/img-agradecimiento-hover-01.webp');
+	background-size: 100% 220px;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity:1;
+}
+@media screen and (max-width: 1199px) {
+	.fondo_contenido_01:hover div.info_contenido{
+		background-size: 100% auto;
+	}
+}
+@media screen and (max-width: 767px) {
+	.fondo_contenido_01:hover div.info_contenido{
+		background-size: 100% auto;
+	}
+}
+
+.fondo_contenido_02{
+	background: url('../images/img-agradecimiento-aliados-2020-02.webp');
+	background-size: 100% 220px;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 220px;
+	margin:10px 0px 0px 0px;
+	position: relative;
+}
+@media screen and (max-width: 1199px) {
+	.fondo_contenido_02{
+		background-size: 100% auto;
+		min-width: 100%;
+		margin:10px 0px 0px 0px;
+		height: 200px;
+	}
+}
+@media screen and (max-width: 991px) {
+	.fondo_contenido_02{
+		background-size: 100% auto;
+		min-width: 100%;
+		margin:10px 0px 0px 0px;
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.fondo_contenido_02{
+		background-size: 100% auto;
+		min-width: 100%;
+		height: 300px;
+		margin:0px 0px 0px 0px;
+	}
+}
+@media screen and (max-width: 575px) {
+	.fondo_contenido_02{
+		background-size: 100% auto;
+		min-width: 100%;
+		height: 150px;
+		margin:0px 0px 0px 0px;
+	}
+}
+.fondo_contenido_02:hover div.info_contenido{
+	background:url('../images/img-agradecimiento-hover-02.webp');
+	background-size: 100% 220px;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity:1;
+}
+@media screen and (max-width: 1199px) {
+	.fondo_contenido_02:hover div.info_contenido{
+		background-size: 100% auto;
+	}
+}
+@media screen and (max-width: 767px) {
+	.fondo_contenido_02:hover div.info_contenido{
+		background-size: 100% auto;
+	}
+}
+
+
+.fondo_contenido_03{
+	background: url('../images/img-agradecimiento-aliados-2020-03.webp');
+	background-size: 100% 220px;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 220px;
+	margin:10px 0px 0px 0px;
+	position: relative;
+}
+@media screen and (max-width: 1199px) {
+	.fondo_contenido_03{
+		background-size: 100% auto;
+		min-width: 100%;
+		margin:10px 0px 0px 0px;
+		height: 200px;
+	}
+}
+@media screen and (max-width: 991px) {
+	.fondo_contenido_03{
+		background-size: 100% auto;
+		min-width: 100%;
+		margin:10px 0px 0px 0px;
+		height: 200px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.fondo_contenido_03{
+		background-size: 100% auto;
+		min-width: 100%;
+		height: 300px;
+		margin:0px 0px 0px 0px;
+	}
+}
+@media screen and (max-width: 575px) {
+	.fondo_contenido_03{
+		background-size: 100% auto;
+		min-width: 100%;
+		height: 150px;
+		margin:0px 0px 0px 0px;
+	}
+}
+
+.fondo_contenido_03:hover div.info_contenido{
+	background:url('../images/img-agradecimiento-hover-03.webp');
+	background-size: 100% 220px;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity:1;
+}
+@media screen and (max-width: 1199px) {
+	.fondo_contenido_03:hover div.info_contenido{
+		background-size: 100% auto;
+	}
+}
+@media screen and (max-width: 767px) {
+	.fondo_contenido_03:hover div.info_contenido{
+		background-size: 100% auto;
+	}
+}
+
+
+
+.fondo_contenido_01:hover img.ser-01{
+	opacity:0;
+}
+
+.fondo_contenido_01:hover h3.tx_encode_regular_12_blanco{
+	opacity:0;
+}
+
+.fondo_contenido_01:hover h2.tx_encode_medium_18_blanco{
+	opacity:0;
+}
+
+.info_contenido{
+	background-color:rgba(255, 255, 255, 0);
+	height: 100%;
+	opacity:0;
+}
+
+.close.enlace-01{
+  position: absolute;
+  color: $blanco;
+  right: -50px;
+  top: -20px;
+	font-size: 44px;
+	@media screen and (max-width: $window-size-md) {
+    right: -5px;
+    top: -60px;
+  }
+}
+
+.close.enlace-02{
+  position: absolute;
+  color: $blanco;
+  right: -50px;
+  top: -20px;
+	font-size: 44px;
+	@media screen and (max-width: $window-size-md) {
+    right: -5px;
+    top: -60px;
+  }
+}
+
+.modal-lg.enlace-01{
+  max-width: 1200px;
+	top: 100px;
+  @media screen and (max-width: $window-size-xl) {
+    max-width: 870px;
+    top: 80px;
+  }
+  @media screen and (max-width: $window-size-lg) {
+    max-width: 750px;
+    top: 80px;
+  }
+  @media screen and (max-width: $window-size-md) {
+    max-width: 650px;
+    top: 80px;
+  }
+  @media screen and (max-width: $window-size-sm) {
+    max-width: 540px;
+    top: 80px;
+  }
+}
+
+.modal-lg.enlace-02{
+  max-width: 1200px;
+	top: 100px;
+  @media screen and (max-width: $window-size-xl) {
+    max-width: 870px;
+    top: 80px;
+  }
+  @media screen and (max-width: $window-size-lg) {
+    max-width: 750px;
+    top: 80px;
+  }
+  @media screen and (max-width: $window-size-md) {
+    max-width: 650px;
+    top: 80px;
+  }
+  @media screen and (max-width: $window-size-sm) {
+    max-width: 540px;
+    top: 80px;
+  }
+}
+

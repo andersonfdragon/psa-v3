@@ -1,0 +1,105 @@
+/*NAVBAR XS*/
+.navbar.menu_xs{
+  padding: 0;
+}
+.progress.bar-xs{
+  background-color: rgba(156, 156, 156, .4);
+  border-radius:0px;
+  height: 5px;
+}
+.progress-bar.bar-xs{
+  background-color: #3B286C;
+  border-radius:0px 5px 5px 0px;
+  height: 5px;
+}
+.navbar-toggler.menu_xs{
+  position: relative;
+  display: block;
+  padding: 15px;
+  width: 100%;
+  border:none;
+  border-radius: 0px;
+  font-family: $Lato-Light;
+  color:$blanco;
+  background: $gradient06;
+  font-size: $tx-size-md-04 + 1;
+  span img{
+    position: absolute;
+    right: 37px;
+    top:20px;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+.navbar-nav.menu_xs{
+  padding: 0px 18px 0px 18px;
+}
+// .navbar-light .navbar-nav .active>.nav-link.menu_xs{
+//   position: relative;
+//   font-family: $Lato-Regular;
+//   color:$color01;
+//   font-size: $tx-size-md-04;
+//   text-align: center;
+//   padding: 20px 10px;
+//   border-bottom: 1px solid $claro02;
+//   span img{
+//     position: absolute;
+//     right: 22px;
+//     top:25px;
+//   }
+// }
+.navbar-light .navbar-nav .nav-link.menu_xs{
+  position: relative;
+  font-family: $Lato-Regular;
+  color:$color01;
+  font-size: $tx-size-md-04;
+  text-align: center;
+  padding: 20px 10px;
+  border-bottom: 1px solid $claro02;
+  span img{
+    position: absolute;
+    right: 22px;
+    top:25px;
+  }
+}
+.navbar-light .navbar-nav .nav-link.menu_xs.ultimo{
+  border:none;
+}
+
+.dropdown-menu.menu_xs{
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-item.menu_xs{
+  position: relative;
+  background-color: transparent;
+  border: none;
+  font-family: $Lato-Light;
+  color:$color01;
+  font-size: $tx-size-md-04;
+  padding: 25px 0px;
+  text-align: center;
+  border-bottom: 1px solid #C4C4C4;
+  padding-right:50px;
+  .division-tx-nav-xs{
+    padding:0px 15px 0px 15px;
+    width: 50px;
+  }
+  .division-tx-nav-xs-02{
+    padding:0px 15px 0px 22px;
+    width: 50px;
+  }
+  span img{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+  }
+}
+
+.dropdown-divider{
+  margin-top: 0px;
+}

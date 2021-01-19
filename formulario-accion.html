@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="PsicoAlianza | Plataforma de Pruebas Psicotécnicas" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pruebaspsicotecnicas.com.co/index.html" />
+    <meta property="og:image" content="https://pruebaspsicotecnicas.com.co/images/social-media-psicoalianza.webp" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:description" content="Respalde sus decisiones de selección de personal, con nuestra plataforma de pruebas psicotécnicas." />
+    <meta property="og:site_name" content="PsicoAlianza | Pruebas Psicotecnicas" />
+
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/intlTelInput.css">
+    <link rel="stylesheet" href="css/styles-psa-2020.css">
+    <link rel="shortcut icon" href="images/favicon-psicolianza-landing-96x96.webp" type="image/x-icon">
+    
+
+    <title>Formulario Accion</title>
+
+  </head>
+  <body>
+
+
+    <!-- MAQUETACION MOVIL XS - W100% -->
+    <!-- <nav class="navbar menu_xs navbar-light fixed-bottom bg-light d-block d-sm-block d-md-block d-lg-none d-xl-none">
+      <div class="progress bar-xs">
+        <div id="progress-bar-xs" class="progress-bar bar-xs" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <button id="btn-menu-nav-xs" class="navbar-toggler menu_xs" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span>¿Cómo podemos ayudarle? <span><img id="img-menu-btn-xs" src="images/ico-desplegar-nav-xs.webp" alt="icono ir"></span></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav menu_xs mr-auto">
+          <li class="nav-item active">
+            <a title="Ayuda, soy un candidato" class="nav-link menu_xs" href="acompañamiento.html" itemprop="url">Ayuda, soy un candidato <span><img src="images/ico-ir-nav-xs.webp" alt="icono ir"></span></a>
+          </li>
+          <li id="drop-activo" class="nav-item dropdown">
+            <a title="Quiero contactar a un asesor" class="nav-link menu_xs" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" itemprop="url">
+              Quiero contactar a un asesor <span><img id="img-ico-drop" src="images/ico-ir-nav-xs.webp" alt="icono ir"></span>
+            </a>
+            <div class="dropdown-menu menu_xs" aria-labelledby="navbarDropdown">
+              <a title="Llamar" class="dropdown-item menu_xs" href="tel:0317430615" itemprop="telephone">Llamar <span class="division-tx-nav-xs">|</span> 745 06 15 <span><img src="images/ico-tel-nav-xs.webp" alt="icono telefono"></span></a>
+              <a title="Contactar por Whatsapp" class="dropdown-item menu_xs" itemprop="url" href="https://api.whatsapp.com/send?phone=573176674066&text=Quiero%20m%C3%A1s%20informaci%C3%B3n%20acerca%20de%20PsicoAlianza">Whatsapp <span class="division-tx-nav-xs-02">|</span> 317 667 4066 <span><img src="images/ico-wa-nav-xs.webp" alt="icono whatsapp"></span></a>
+              <div class="dropdown-divider"></div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a title="Quiero probar PsicoAlianza" class="nav-link menu_xs ultimo" href="formulario_demostracion.html" itemprop="url">Quiero probar PsicoAlianza <span><img src="images/ico-ir-nav-xs.webp" alt="icono ir"></span></a>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+
+    <!-- MAQUETACION WEB -->
+    <div class="nav-soporte d-none d-sm-block d-lg-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+            <a onclick="history.back();" style="cursor:pointer;">
+              <img src="images/logo_psa_externo.webp" alt="Logo PsicoAlianza Externo" class="d-block">
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <a class="d-none d-lg-block" href="#" title="Contáctenos" data-toggle="modal" data-target=".bd-example-modal-lg.contacto-soporte-web">
+      <div class="btn_contacto">
+        <div class="btn_contacto__relative"></div>
+        <div class="btn_contacto__absolute"></div>
+      </div>
+    </a> -->
+
+    <div class="seccion-01-formulario-registro">
+      
+      <div id="procesando-datos" class="container d-none">
+        <div class="row">
+          <div class="col-12">
+            <div class="spinner-border loader-form d-block mx-auto" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+            <h3 class="tx-seccion-form-send">Estamos procesando sus datos...</h3>
+          </div>  
+        </div>
+      </div>
+
+      
+      <div id="seccion-formulario" class="container msn-enviado">
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-md-8 col-sm-12 sin-padding">
+            <div id="sliderFormWeb" class="carousel slide" data-ride="carousel" data-interval="false">
+              <div class="carousel-inner">
+
+                <div class="carousel-item active">
+
+                  <div class="nav-form-xs d-block d-sm-none">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12 sin-padding">
+                          <!-- <a href="index.html" class="regresar-index-form-xs"><span><img src="images/regresar-index-form-xs.webp" alt="regresar index"></span> Volver a inicio</a> -->
+                          <a onclick="history.back();" style="cursor:pointer;" class="regresar-index-form-xs"><span><img src="images/regresar-index-form-xs.webp" alt="regresar index"></span> Volver a inicio</a>
+                          <img src="images/icono_formulario_xs_01.webp" alt="Img Form Transicion 01" class="d-block w-100">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <form role="form" id="contactForm" data-toggle="validator" >
+
+                    <img src="images/icono_formulario_01.webp" alt="Icono Formulario" class="d-none d-sm-block mx-auto">
+                    <h3 class="tx-seccion-01-formulario-registro-01 d-none d-sm-block">Deje sus datos y nuestros asesores le darán un recorrido por nuestra plataforma de evaluación</h3>
+                    <h3 class="tx-seccion-01-formulario-registro-01 d-block d-sm-none">Deje sus datos y nuestros asesores le darán un recorrido por nuestra plataforma de evaluación</h3>
+
+                    
+                    <div class="form-group">
+                      <label for="empresa">Nombre de la Compañía</label>
+                      <input type="text" class="form-control mx-auto" id="empresa" placeholder="Nombre de la Compañía" required>
+                      <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="nit">NIT</label>
+                      <input type="text" class="form-control mx-auto" id="nit" placeholder="NIT" required pattern="[0-9-]*" inputmode="numeric">
+                      <div class="help-block with-errors"></div>
+                    </div>
+
+
+                    <div class="form-group">
+                      <label for="proceso_seleccion">¿Ya utilizan pruebas psicométricas?</label>
+                      <select name="opcion_proceso_seleccion" id="proceso_seleccion" class="form-control mx-auto" required>
+                        <option class="d-block d-sm-none" value="" selected disabled>Seleccione una opción</option>
+                        <option class="d-none d-sm-block" value="" selected disabled>¿Ya utiliza pruebas psicométricas?</option>
+                        <option value="No utilizo pruebas psicométricas">No utilizo pruebas psicométricas</option>
+                        <option value="Pruebas psicométricas en papel (Valanti, Wartegg, 16 BF, otras)">Pruebas psicométricas en papel (Valanti, Wartegg, 16 BF otras)</option>
+                        <option value="Plataforma de pruebas psicométricas en línea">Plataforma de pruebas psicométricas en línea.</option>
+                        <option value="Otra">Otra</option>
+                      </select>
+                      <div id="msgSubmit_proceso_seleccion" class="h4 text-center hidden"></div>
+                    </div>
+
+                    <!-- <div class="form-group">
+                      <select name="opcion_colaboradores" id="numero_colaboradores" class="form-control mx-auto" required>
+                        <option value="" selected disabled>Número de Colaboradores</option>
+                        <option value="1-50">1-50</option>
+                        <option value="50-100">51-100</option>
+                        <option value="100-250">101-250</option>
+                        <option value="250-500">251-500</option>
+                        <option value="500-1000">501-1000</option>
+                        <option value="1000-3000">1001-3000</option>
+                        <option value="3000+">3001+</option>
+                      </select>
+                      <div id="msgSubmit_colaboradores" class="h4 text-center hidden"></div>
+                    </div> -->
+
+                    <!--#slider-formulario-registro-->
+                    <button id="btn_paso_01" type="submit" class="btn btn-warning btn-lg d-block mx-auto" data-target="" data-slide-to="1">Siguiente<span><img src="images/icono-enviar-form.webp" alt="Icono Avanzar"></span></button>
+
+                    <div id="msgSubmit" class="hidden"></div>
+                    <div class="clearfix"></div>
+
+                    <h3 class="tx-seccion-01-formulario-registro-02">*Oferta válida solo para empresas</h3>
+                  </form>
+
+                </div>
+
+
+                <div class="carousel-item">
+
+                  <div class="nav-form-xs d-block d-sm-none">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12 sin-padding">
+                          <!-- <a href="index.html" class="regresar-index-form-xs"><span><img src="images/regresar-index-form-xs.webp" alt="regresar index"></span> Volver a inicio</a> -->
+                          <a onclick="history.back();" style="cursor:pointer;" class="regresar-index-form-xs"><span><img src="images/regresar-index-form-xs.webp" alt="regresar index"></span> Volver a inicio</a>
+                          <img src="images/icono_formulario_xs_02.webp" alt="Img Form Transicion 01" class="d-block w-100">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <form role="form" id="contactForm_02" data-toggle="validator" >
+
+                    <img src="images/icono_formulario_02.webp" alt="Icono Formulario" class="d-none d-sm-block mx-auto">
+                    <h3 class="tx-seccion-01-formulario-registro-01">Ahora<br> hablemos un poco de usted</h3>
+
+                    <div class="form-group">
+                      <label for="first_name">Nombres y Apellidos</label>
+                      <input type="text" class="form-control mx-auto" id="first_name" placeholder="Nombre y Apellido" required>
+                      <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="funciones">¿Cómo describe sus funciones?</label>
+                      <select name="opcion_funciones" id="funciones" class="form-control mx-auto" required>
+
+                        <option class="d-block d-sm-none" value="" selected disabled>Seleccione una opción</option>
+                        <option class="d-none d-sm-block" value="" selected disabled>¿Cómo describe sus funciones?</option>
+                        <option value="Gerente General">Gerente General</option>
+                        <option value="Gerente de RRHH">Gerente de RRHH</option>
+                        <option value="Jefe de RRHH">Jefe de RRHH</option>
+                        <option value="Analista de RRHH">Analista de RRHH</option>
+                        <option value="Director/Jefe de departamento (Otro)">Director/Jefe de departamento (Otro)</option>
+                        <option value="Consultor de RRHH">Consultor de RRHH</option>
+                        <option value="Dueño de negocio">Dueño de negocio</option>
+                        <option value="Estoy buscando trabajo">Estoy buscando trabajo</option>
+                        <option value="Otro">Otro</option>
+                      </select>
+                      <div id="msgSubmit_funciones" class="h4 text-center hidden"></div>
+                    </div>
+
+                    <div class="form-group">
+                      <!-- <label for="telephone">Número de Celular</label>
+                      <div class="contenedor-label-telefono">
+                        <input type="text" class="form-control estilo_casilla_telefono_02" id="telephone" placeholder="Número de Celular" required pattern="[0-9]*" inputmode="numeric" maxlength="10">
+                        <img src="images/llamar_colombia.webp" class="telephone-web">
+                      </div>
+
+                      <div class="help-block with-errors"></div> -->
+
+                      <label for="telephone">Número de Celular</label>
+                      <input type="text" class="form-control" id="telephone" placeholder="Número de Celular" required pattern="[0-9]*" inputmode="numeric" maxlength="10">
+                      <div class="help-block with-errors"></div>
+        
+                    </div>
+
+                    <div class="form-group">
+                      <label for="telephone-line">Número de Teléfono Fijo</label>
+                      <div class="contenedor-label-telefono">
+                        <input type="text" class="form-control" id="telephone-line" placeholder="Número de Teléfono Fijo" required pattern="[0-9]*" inputmode="numeric" maxlength="10">
+                      </div>
+
+                      <div class="help-block with-errors"></div>
+                    </div>
+
+
+                    <div class="form-group">
+                      <label for="email">Correo Electrónico</label>
+                      <input type="email" class="form-control mx-auto" id="email" placeholder="Correo electrónico" required>
+                      <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="checkbox-02 mx-auto">
+                      <input type="checkbox" id="checkbox" required> Acepto la <span><a href="" type="button" data-toggle="modal" data-target=".bd-example-modal-lg.condiciones-modal" class="tx_terminos" title="Ver términos y condiciones">política de protección y tratamiento de datos.</a></span>
+                    </div>
+                    <div id="msgSubmit_condiciones" class="h4 text-center hidden"></div>
+                  
+                    <button type="submit" id="form-submit" class="btn btn-warning btn-lg d-block mx-auto">Enviar<span><img src="images/icono-enviar-form.webp" alt="Icono Avanzar"></span></button>
+
+                    <div id="msgSubmit_paso_02" class="h4 text-center hidden"></div>
+                    <div class="clearfix"></div>
+                  </form>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="footer-xs d-block d-sm-none">
+      <div class="container margen-cont-footer-xs">
+        <div class="row">
+          <div class="col-4 padding-1-xs">
+            <img src="images/logo_psa_2020_xs.webp" alt="Logo PsicoAlianza Movil" class="d-block mx-auto">
+          </div>
+          <div class="col-8 padding-1-xs">
+            <div class="margen-iconos-redes-xs">
+              <a title="Ir a LinkedIn" target="_blank" href="https://www.linkedin.com/company/psicoalianza/" itemprop="url"><img src="images/icono_linkedIn_web.webp" alt="Icono LinkedIn"></a>
+              <a title="Ir a Youtube" target="_blank" href="https://www.youtube.com/channel/UCrEsF0ZRxvhuNvlUWiSOKTA" itemprop="url"><img src="images/icono_youtube_web.webp" alt="Icono Youtube Movil"></a>
+              <a title="Ir a Facebook" target="_blank" href="https://www.facebook.com/psicoalianza/" itemprop="url"><img src="images/icono_facebook_web.webp" alt="Icono Facebook Movil"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container borde-gris">
+        <div class="row">
+          <div class="col-12 padding-1-xs">
+            <h3 class="tx-footer-xs-01">Pongámonos en contacto</h3>
+            <a title="Contactar por Whatsapp" itemprop="url" href="https://api.whatsapp.com/send?phone=573176674066&text=Quiero%20más%20información%20acerca%20de%20PsicoAlianza"><h3 class="tx-footer-xs-02"><span><img src="images/icono_footer_wa_xs.webp" alt="icono whatsapp xs"></span> 317 667 4066</h3></a>
+            <!-- <a title="Contactar por Telefono" itemprop="url" href="tel:0317450615"><h3 class="tx-footer-xs-02"><span><img src="images/icono_footer_tel_xs.webp" alt="icono telefono xs"></span> PBX. 745 06 15</h3></a> -->
+            <a title="Contactar por Email" itemprop="url" href="mailto:contacto@psicoalianza.com"><h3 class="tx-footer-xs-02"><span><img src="images/icono_footer_mail_xs.webp" alt="icono email xs"></span> contacto@psicoalianza.com</h3></a>
+            <!-- <a title="Ubicacion" itemprop="url" href="https://goo.gl/maps/EK4WGmXGeTFRdwsZ9"><h3 class="tx-footer-xs-02"><span><img src="images/icono_footer_location_xs.webp" alt="icono ubicacion xs"></span> Cra 15Bis #39A - 27, Bogotá</h3></a> -->
+            <a href="acompañamiento.html"><h3 class="tx-footer-xs-02"><span><img src="images/icono_footer_contacto_xs.webp" alt="icono contacto xs"></span> Soporte a candidatos →</h3></a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+
+    <footer class="d-none d-sm-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3 offset-sm-0 offset-lg-2 offset-xl-1">
+            <img class="logo_footer_web d-block w-100" src="images/logo_psa_2020_footer_web.webp" alt="Logo PSA Footer">
+          </div>
+          <div class="col-sm-5 col-md-4 col-lg-4 col-xl-3 offset-sm-1 offset-md-2 offset-lg-2 offset-xl-4">
+            <h3 class="tx-footer-web-01">Pongámonos en contacto</h3>
+            <a title="Contactar por Whatsapp" itemprop="url" href="https://api.whatsapp.com/send?phone=573176674066&text=Quiero%20más%20información%20acerca%20de%20PsicoAlianza"><h3 class="tx-footer-web-02" itemprop="telephone"><span><img src="images/icono_footer_wa.webp" alt="ico whatsapp"></span> 317 667 4066</h3></a>
+            <!-- <a title="Contactar por Telefono" itemprop="url" href="tel:0317450615"><h3 class="tx-footer-web-02" itemprop="telephone"><span><img src="images/icono_footer_tel.webp" alt="ico telefono"></span> PBX. 745 06 15</h3></a> -->
+            <a title="Contactar por Email" itemprop="url" href="mailto:contacto@psicoalianza.com"><h3 class="tx-footer-web-02" itemprop="email"><span><img src="images/icono_footer_mail.webp" alt="ico email"></span> contacto@psicoalianza.com</h3></a>
+            <!-- <a title="Ubicacion" itemprop="url" href="https://goo.gl/maps/EK4WGmXGeTFRdwsZ9"><h3 class="tx-footer-web-02" itemprop="address"><span><img src="images/icono_footer_location.webp" alt="ico location"></span> Cra 15Bis #39A - 27, Bogotá</h3></a> -->
+            <a href="acompañamiento.html" itemprop="url" title="Soporte a Candidatos"><h3 class="tx-footer-web-02"><span><img src="images/icono_footer_contacto.webp" alt="ico location"></span> Soporte a candidatos</h3></a>
+          </div>
+
+          <div class="col-sm-2 col-md-1 col-lg-1 col-xl-1 offset-sm-0 offset-md-0 offset-lg-0 offset-xl-0">
+            <div class="margen-iconos-redes">
+              <a title="Ir a LinkedIn" target="_blank" href="https://www.linkedin.com/company/psicoalianza/" itemprop="url"><img class="icono-red-footer" src="images/icono_linkedIn_web.webp" alt="Icono LinkedIn"></a>
+              <a title="Ir a Youtube" target="_blank" href="https://www.youtube.com/channel/UCrEsF0ZRxvhuNvlUWiSOKTA" itemprop="url"><img class="icono-red-footer" src="images/icono_youtube_web.webp" alt="Icono Youtube"></a>
+              <a title="Ir a Facebook" target="_blank" href="https://www.facebook.com/psicoalianza/" itemprop="url"><img class="icono-red-footer" src="images/icono_facebook_web.webp" alt="Icono Facebook"></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <div class="seccion_terminos">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            
+            <hr class="separador-footer">
+
+            <h3 class="tx-separador-footer">
+              <a href="terminos-condiciones.html">Terminos y Condiciones</a> 
+              <!-- <a href="politica-privacidad.html">Política de Privacidad</a> | 
+              <a href="terminos-condiciones-web.html">Términos y Condiciones</a> -->
+            </h3>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- MODAL MENU DE CONTACTO Y SOPORTE -->
+    <div data-backdrop="static" class="modal fade bd-example-modal-lg contacto-soporte-web" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg contacto-soporte-web">
+        <div class="modal-content contacto-soporte-web">
+          <button type="button" class="close contacto-soporte-web" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          
+          <!-- <img src="images/img_menu_contacto_web.webp" alt="Img Contacto Web" class="img-menu-contacto mx-auto"> -->
+          <span class="punto-menu"><span class="punto-menu-01">.</span><span class="punto-menu-02">.</span><span class="punto-menu-03">.</span></span>
+
+          <h3 class="tx-modal-web-contacto-01">¿Cómo podemos ayudarle?<span>|</span></h3>
+          <!-- <h3 class="tx-modal-web-contacto-01">¿Cómo podemos ayudarle?<span></span></h3> -->
+
+          <!-- <a title="Quiero una demostración" itemprop="url" id="hover-btn-contacto-01" href="formulario_demostracion.html" class="tx-modal-web-contacto-02 mx-auto">Quiero una demostración <span></span></a> -->
+          <a title="Quiero obtener un mes gratis" itemprop="url" id="hover-btn-contacto-01" href="formulario_demostracion.html" class="tx-modal-web-contacto-02 mx-auto">Quiero obtener un mes gratis <span></span></a>
+          <a title="Quiero contactar a un asesor" itemprop="url" id="hover-btn-contacto-02" class="tx-modal-web-contacto-02 no-margin mx-auto" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Quiero contactar a un asesor <span></span></a>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body collapse-menu-contacto mx-auto">
+              <a title="Llamar" itemprop="url" href="formulario_accion.html"><h3 class="tx-modal-web-contacto-03">Programar una llamada<span>743 06 15</span></h3></a>
+              <a title="Contactar por Whatsapp" itemprop="url" href="https://api.whatsapp.com/send?phone=573176674066&text=Quiero%20más%20información%20acerca%20de%20PsicoAlianza"><h3 class="tx-modal-web-contacto-04">Contactar vía WhatsApp<span>317 667 4066</span></h3></a>
+            </div>
+          </div>
+          <a title="Ayuda, soy un candidato" itemprop="url" id="hover-btn-contacto-03" href="acompañamiento.html" class="tx-modal-web-contacto-02 si-margin mx-auto">Ayuda, soy un candidato <span></span></a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL TERMINOS Y CONDICIONES -->
+    <div class="modal fade bd-example-modal-lg condiciones-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg condiciones-modal">
+        <div class="modal-content condiciones-modal">
+
+          <button type="button" class="close terminos_condiciones" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span>x</button>
+
+          <div id="iframeTerminos" class="iframe-modal-condiciones"></div>
+
+          <button type="button" id="aceptar_terminos_popUp" class="btn btn-warning btn-lg btn-modal-terminos mx-auto">Continuar</button>
+        
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/intlTelInput.js"></script>
+    
+    <script>
+      var input = document.querySelector("#telephone");
+      window.intlTelInput(input, {
+        // allowDropdown: false,
+        // autoHideDialCode: false,
+        // autoPlaceholder: "off",
+        // dropdownContainer: document.body,
+        // excludeCountries: ["us"],
+        // formatOnDisplay: false,
+        hiddenInput: "full_number",
+        initialCountry: "co",
+        // geoIpLookup: function(callback) {
+        //   $.get('https://ipinfo.io', function() {}, "jsonp").always(function(resp) {
+        //     var countryCode = (resp && resp.country) ? resp.country : "";
+        //     callback(countryCode);
+        //   });
+        // },
+        // localizedCountries: { 'de': 'Deutschland' },
+        // nationalMode: false,
+        // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+        // placeholderNumberType: "MOBILE",
+        // preferredCountries: ['cn', 'jp'],
+        // separateDialCode: true,
+        utilsScript: "js/utils.js",
+      });
+    </script>
+
+
+    <script>
+      function loadXMLDoc() {
+
+        let importIframe =  document.getElementById("iframeTerminos");
+
+        let request = new XMLHttpRequest();
+        request.open("GET", "terminos-condiciones.html", true);
+        request.responseType = "document";
+        request.send(null);
+        request.onreadystatechange = function() {
+          if (request.readyState == 4) {
+            let doc = request.response;
+            let elem = doc.getElementById("importHTML").innerHTML;
+            // alert(elem.innerHTML);
+
+            let importHTML = elem
+
+            importIframe.innerHTML = importHTML
+
+          }
+        }
+      }
+
+      loadXMLDoc()
+      
+    </script>
+
+    <script src="js/scripts-formulario-accion.js"></script>   
+    
+  </body>
+</html>

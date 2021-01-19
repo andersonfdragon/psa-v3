@@ -1,0 +1,110 @@
+/* MENU DESPLEGABLE */
+// @keyframes animacion-iconos{
+// 	0%{
+// 		background-position: 50px center;
+// 	}
+// 	25%{
+// 		background-position: 50px center;
+// 	}
+// 	50%{
+// 		background-position: 100px center;
+// 	}
+// 	75%{
+// 		background-position: 100px center;
+// 	}
+// 	100%{
+// 		background-position: 150px center;
+// 	}
+// }
+
+@keyframes animacion-iconos{
+	0%{
+    background-image: url('../images/sprite_btn_contacto_web_01.webp');
+    transform: rotateZ(0deg) scale(1);
+  }
+  5%{
+    transform: rotateZ(0deg) scale(1.1);
+  }
+  10%{
+    transform: rotateZ(0deg) scale(1);
+  }
+  40%{
+    background-image: url('../images/sprite_btn_contacto_web_01.webp');
+    transform: rotateZ(0deg) scale(1);
+  }
+  45%{
+    background-image: url('../images/sprite_btn_contacto_web_02.webp');
+    transform: rotateZ(360deg) scale(0);
+  }
+  50%{
+    background-image: url('../images/sprite_btn_contacto_web_02.webp');
+    transform: rotateZ(0deg) scale(1);
+  }
+  55%{
+    background-image: url('../images/sprite_btn_contacto_web_02.webp');
+    transform: rotateZ(0deg) scale(1.1);
+  }
+  60%{
+    transform: rotateZ(0deg) scale(1);
+  }
+  90%{
+    background-image: url('../images/sprite_btn_contacto_web_02.webp');
+    transform: rotateZ(0deg) scale(1);
+  }
+  95%{
+    background-image: url('../images/sprite_btn_contacto_web_01.webp');
+    transform: rotateZ(360deg) scale(0);
+  }
+  100%{
+    background-image: url('../images/sprite_btn_contacto_web_01.webp');
+    transform: rotateZ(0deg) scale(1);
+  }
+}
+
+.btn_contacto{
+  position: fixed;
+  right: 0px;
+  top: 490px;
+  background: url('../images/btn_contacto_web.webp');
+  background-size: 113px 112px;
+  background-position: right center;
+  background-repeat: no-repeat;
+  height: 113px;
+  width: 112px;
+  z-index: 1000;
+  &__relative{
+    position: relative;
+    height: 113px;
+    width: 112px;
+  }
+  
+  &__absolute{
+    position: absolute;
+    left: 29px;
+    top: 34px;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-repeat: repeat-x, no-repeat;
+    animation-name: animacion-iconos;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    /* animation-timing-function: steps(2); */
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    z-index: 101;
+    @media screen and (max-width: $window-size-xl) {
+      left: 19px;
+      top: 22px;
+    }
+  }
+  @media screen and (max-width: $window-size-xl) {
+    background-size: 91px 90px;
+    height: 90px;
+    width: 91px;
+    top: 300px;
+  }
+}
+

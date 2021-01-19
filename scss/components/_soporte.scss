@@ -1,0 +1,175 @@
+/* SOPORTE */
+.nav-soporte{
+  padding: 32px 0px 32px 0px;
+  box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+}
+
+.seccion_01_soporte{
+  padding: 70px 0px 70px 0px;
+  @media screen and (max-width: $window-size-xs) {
+    padding: 25px 0px 70px 0px;
+  }
+}
+
+.tx-seccion-01-soporte-01{
+  color: $color01;
+  font-family: $Lato-Light;
+  font-size: $tx-size-xl-03 + 4;
+  text-align: center;
+  margin: 40px 0px 10px 0px;
+  @media screen and (max-width: $window-size-xl) {
+    font-size: $tx-size-lg-03 + 4;
+  }
+  @media screen and (max-width: $window-size-lg) {
+    font-size: $tx-size-md-03 + 4;
+  }
+}
+
+.tx-seccion-01-soporte-02{
+  color: $color01;
+  font-family: $Lato-Light;
+  font-size: $tx-size-xl-03 + 4;
+  text-align: center;
+  margin: 0px 0px 70px 0px;
+  @media screen and (max-width: $window-size-xl) {
+    font-size: $tx-size-lg-03 + 4;
+  }
+  @media screen and (max-width: $window-size-lg) {
+    font-size: $tx-size-md-03 + 4;
+  }
+  @media screen and (max-width: $window-size-xs) {
+    margin: 30px 0px 60px 0px;
+  }
+}
+
+.tx-seccion-01-soporte-03{
+  display: block;
+  width: 100%;
+  color: $color01;
+  font-family: $Lato-Regular;
+  font-size: $tx-size-xl-03;
+  margin: 0px 0px 0px 0px;
+  text-decoration: none;
+  text-align: left;
+  span{
+    float: right;
+    @media screen and (max-width: $window-size-xs) {
+      float: initial;
+      display: block;
+      margin:20px 0px 0px 0px;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: $window-size-xl) {
+    font-size: $tx-size-lg-03;
+  }
+  @media screen and (max-width: $window-size-lg) {
+    font-size: $tx-size-md-03;
+  }
+  @media screen and (max-width: $window-size-xs) {
+    text-align: center;
+    font-size: $tx-size-xs-03;
+  }
+}
+
+.tx-seccion-01-soporte-03:focus{
+  text-decoration: none;
+}
+
+.tx-seccion-01-soporte-03:hover{
+  text-decoration: none;
+  color: $color01;
+}
+
+.soporte.accordion>.card>.card-header {
+  border-radius: 0;
+  margin-bottom: 30px;
+}
+
+.soporte.accordion>.card {
+  border:none;
+}
+
+.soporte.accordion>.card>.card-header {
+  // background: $blanco;
+  border:none;
+  border-radius: 12px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,.2);
+}
+
+.margen-card-body.card-body{
+  padding:0px 32px 32px 32px;
+}
+
+.margen-card-body.card-body{
+  padding:0px 32px 32px 32px;
+  font-size: $tx-size-xl-05;
+  span{
+    font-family: $Lato-Bold;
+  }
+  a{
+    margin-right: 20px;
+    color:$color01;
+    text-decoration: underline;
+    &:hover{
+      color:$color01;
+      text-decoration: underline;
+    }
+  }
+  @media screen and (max-width: $window-size-xl) {
+    font-size: $tx-size-lg-05;
+  }
+  @media screen and (max-width: $window-size-xs) {
+    font-size: $tx-size-xs-03;
+  }
+}
+
+.regresar-inicio{
+  display: block;
+  font-size: $tx-size-xl-04;
+  color: $color01;
+  margin-top:20px;
+  span{
+    margin-right:20px;
+    @media screen and (max-width: $window-size-xs) {
+      font-size: $tx-size-xs-03;
+      margin-right:7px;
+      img{
+        width: 6px;
+      }
+    }
+  }
+  &:hover{
+    text-decoration: none;
+    color: $color01;
+  }
+  @media screen and (max-width: $window-size-xs) {
+    font-size: $tx-size-xs-03;
+    margin-top:0px;
+  }
+}
+
+.regresar-inicio-02{
+  display: block;
+  font-size: $tx-size-xl-04;
+  color: $color01;
+  margin-top:20px;
+  span{
+    margin-right:20px;
+    @media screen and (max-width: $window-size-xs) {
+      font-size: $tx-size-xs-03;
+      margin-right:7px;
+      img{
+        width: 6px;
+      }
+    }
+  }
+  &:hover{
+    text-decoration: none;
+    color: $color01;
+  }
+  @media screen and (max-width: $window-size-xs) {
+    font-size: $tx-size-xs-03;
+    margin-top:0px;
+  }
+}
